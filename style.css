@@ -6,7 +6,8 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 150px auto auto;
-    background-color: whitesmoke;
+    background-color: hsl(193, 9%, 70%);
+
 
 }
 
