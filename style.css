@@ -2,8 +2,27 @@
 
 body {
     text-align: center;
-    margin: 200px auto;
+    margin: 0;
     background-color: rgb(96 110 114);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 200px 100%;
+
+}
+
+header {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    justify-items: center;
+}
+
+footer {
+    background-color: whitesmoke;
+    display: grid;
 }
 
 h1 {
@@ -48,12 +67,25 @@ button {
     background-color: lightgray;
     padding: 1em;
     border-radius: 20px;
-    width: 100px;
+    width: 150px;
     box-shadow: 0px 5px darkslategrey;
+}
+
+.buttonContainer {
+    display: inline-flex;
+}
+
+.buttonContainer div {
+    margin: 1em;
 }
 
 #cheerUp {
     color: black;
-    background-color: white;
     font-family: Lemon;
+}
+
+@media only screen and (max-width: 600px) {
+    .buttonContainer {
+        display: block;
+    }
 }
