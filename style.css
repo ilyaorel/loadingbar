@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+body {
+    text-align: center;
+    margin: 200px auto;
+    background-color: rgb(22, 19, 19);
+}
+
+h1 {
+    font-family: Lemon;
+    color: white;
+    font-size: 3em;
+}
+
+.bar {
+    display: inline-flex;
+    width: 80%;
+    box-shadow: 3px;
+    border-radius: 5px;
+}
+
+.left {
+    background: linear-gradient(green, darkgreen);
+    width: 0%;
+    border-radius: 5px;
+}
+
+.right {
+    background: linear-gradient(red, darkred);
+    width: 100%;
+}
+
+#green {
+    color: white;
+    font-family: monospace;
+    text-align: right;
+    padding-right: 10px;
+}
+button {
+    background-color: lightgray;
+    padding: 1em;
+    border-radius: 20px;
+    width: 100px;
+    box-shadow: 0px 5px darkslategrey;
+}
+
+#cheerUp {
+    color: black;
+    background-color: white;
+    font-family: Lemon;
+}
