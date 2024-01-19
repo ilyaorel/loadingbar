@@ -22,7 +22,6 @@ h1 {
 .left {
     background: linear-gradient(green, darkgreen);
     width: 0%;
-    border-radius: 5px;
 }
 
 .right {
