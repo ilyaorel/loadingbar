@@ -13,27 +13,36 @@ h1 {
 }
 
 .bar {
-    display: inline-flex;
     width: 80%;
-    box-shadow: 3px;
-    border-radius: 5px;
+    display: flex;
+    margin: auto;
+    overflow: hidden; /* Evita que el sombreado se extienda más allá del contenedor */
+    border-radius: 10px; /* Radio del borde redondeado */
+    box-shadow: 0px 5px darkslategrey;
+ 
 }
 
 .left {
-    background: linear-gradient(green, darkgreen);
-    width: 0%;
+    background: linear-gradient(hsl(161, 100%, 40%), hsl(161, 100%, 20%));
+    flex: 0 0 0%; /* Toma la mitad del ancho del contenedor */
+    height: 40px;
+
 }
 
 .right {
-    background: linear-gradient(red, darkred);
-    width: 100%;
+    background: linear-gradient(hsl(0, 100%, 40%), hsl(0, 100%, 20%));
+    flex: 0 0 100%; /* Toma la otra mitad del ancho del contenedor */
+    height: 40px;
+    
 }
 
 #green {
+    display: none;
     color: white;
     font-family: monospace;
     text-align: right;
     padding-right: 10px;
+    align-content: center;
 }
 button {
     background-color: lightgray;

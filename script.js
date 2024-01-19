@@ -24,12 +24,15 @@ function calcVal2() {
 }
 
 function setBarWidth() {
-    greenBar.style.width = `${greenVal}%`;
-    redBar.style.width = `${redVal}%`;
+    greenBar.style.flex = `0 0 ${greenVal}%`;
+    redBar.style.flex = `0 0 ${redVal}%`;
 }
 
 function setBarPercentage() {
-    greenText.innerHTML = `${greenVal}%`;
+    if (greenVal > 3) {
+        greenText.style.display = 'block';
+        greenText.innerHTML = `${greenVal}%`;
+    }
 }
 
 function cheerUp() {
@@ -37,10 +40,11 @@ function cheerUp() {
         cheerText.innerHTML = 'Cmon press harder';
     } else if (greenVal < 66) {
         cheerText.innerHTML = 'There you go man!';
-    } else if (greenVal < 99) {
+    } else if (greenVal < 100) {
         cheerText.innerHTML = 'LFG almost done!!!';
     } else {
-        cheerText.innerHTML = 'BEAST';
+        cheerText.innerHTML = 'BEAST'
+        cheerText.style.fontSize = '5em';
     }
 }
 
